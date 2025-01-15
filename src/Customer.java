@@ -1,4 +1,25 @@
-package PACKAGE_NAME;
-
 public class Customer {
+    Long id;
+    String name;
+    Integer tier;
+
+    public Customer(Long id, String name, Integer tier){
+        this.id= id;
+        this.name=name;
+        this.tier=tier;
+
+    }
+
+    public Integer getTier() {
+        return tier;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "id:" + id +
+                " name:" + name +
+                " tier:" + tier
+                ;
+    }
 }
